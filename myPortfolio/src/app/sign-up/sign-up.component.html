@@ -1,0 +1,16 @@
+<div class = "card" style = "width: 20rem; height: 20rem;">
+    <h3>Sign Up</h3>
+    <hr/>
+    <form [formGroup] = "signUpRef" (ngSubmit) = "addUser()">
+        <label>First Name: </label>
+        <input type="text" formControlName = "fName"/><br/>
+        <label>Last Name: </label>
+        <input type="text" formControlName = "lName"/><br/>
+        <label>Email: </label>
+        <input type="email" formControlName = "email"/><br/>
+        <label>Password: </label>
+        <input type="password" formControlName = "pass"/><br/>
+        <input type="submit" value="Register"/>
+        <input type="reset" value="Reset"/>
+    </form>
+</div>

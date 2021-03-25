@@ -1,0 +1,31 @@
+<div class = "card" style = "width: 20rem; height: 20rem;">
+    <h3>Welcome, {{uName}}</h3>
+    <hr/>
+    <form [formGroup] = "portRef" (ngSubmit) = "submit()">
+        <label>Name:</label>
+        <input type= "Name" formControlName = "name"/><br/>
+        <label>Phone No:</label>
+        <input type="Phone No:" formControlName = "phone"/><br/>
+        <input type="submit" value="Save"/>
+        <input type="reset" value="Reset"/>
+        <br/><br/>
+        <input type="submit" value="Logout" (click) = "reroute()"/>
+    </form>
+</div>
+
+
+<form>
+    <table id ="contactTable" class = "center">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+</form>
+

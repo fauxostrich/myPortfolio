@@ -1,0 +1,27 @@
+div{
+    background-color: lightgrey;
+    border: solid black 2px;
+
+}
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+table,th, td{
+    border: solid black 2px;
+}
+table{
+    border-collapse: collapse;
+    width: 20%;
+}
+th{
+    background-color: grey;
+}
+tbody tr:nth-child(odd){
+    background-color: grey;
+}

@@ -1,0 +1,16 @@
+<div class = "card" style = "width: 20rem; height: 20rem;">
+    <h3>Log-In</h3>
+    <hr/>
+    
+    <form [formGroup] = "logInRef" (ngSubmit) = "authenticate()">
+        <label>Email:</label>
+        <input type="email" id="e" formControlName = "email"/><br/>
+        <label>Password:</label>
+        <input type="password" id ="p" formControlName = "pass"/><br/>
+        <input type="submit" value="Login"/>
+        <input type="reset" value="Reset"/>
+        <br/><br/>
+        <input type ="button" value = "Sign Up" (click)="reroute()"/>
+    </form>
+    
+</div>
